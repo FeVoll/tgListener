@@ -12,7 +12,7 @@ async def main():
     telegram_listener = TelegramListener(api_id, api_hash, phone_number, whitelist)
 
     # Ожидание старта прослушивания Telegram-сообщений
-    await telegram_listener.start_listening(signal_parser, bybit_api)
+    await telegram_listener.start_listening()
 
 if __name__ == "__main__":
     # Запуск основного асинхронного цикла
